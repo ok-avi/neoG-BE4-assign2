@@ -2,6 +2,7 @@ const express = require("express")
 require("dotenv").config()
 const {Recipe} =require("./models/recipe.models.js")
 const {initializeDB} = require("./db/db.connect.js")
+const cors = require("cors")
 const app = express()
 
 initializeDB()
